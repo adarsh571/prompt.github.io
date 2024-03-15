@@ -18,13 +18,13 @@ The temdb can also be used for internal operations like rebuilding indexes (when
 |              | **Tempdb**                                                                                      | **Databases**                                                |
 |-------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
 |**Purpose**                    | Primarily used for temporary storage during query execution                                     | Serve as persistent storage for data                         |
-| ****                    | Holds temporary objects like global or local temporary tables, table variables, and work tables | Store user-defined tables, views, indexes, and other objects |
-| ****                    | Acts as a scratchpad for sorting, spooling, and other intermediate operations.                  |                                                              |
+|                    | Holds temporary objects like global or local temporary tables, table variables, and work tables | Store user-defined tables, views, indexes, and other objects |
+|                     | Acts as a scratchpad for sorting, spooling, and other intermediate operations.                  |                                                              |
 | **Lifetime**            | Recreated every time SQL Server restarts.                                                       | Data persists even after server restarts.                    |
-| ****                    | No data persists across sessions.                                                               |                                                              |
+|                     | No data persists across sessions.                                                               |                                                              |
 | **Durability**          | Non-durable: No data is saved between sessions.                                                 | Durable: Data is persisted                                   |
 | **Schema and Metadata** | Contains system objects related to temporary storage.                                           | User-defined schemas and objects.                            |
-| ****                    | No user-defined schemas.                                                                        |
+|                     | No user-defined schemas.                                                                        |
 
 
 ## Functions of tempdb:
