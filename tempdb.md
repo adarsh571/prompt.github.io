@@ -15,9 +15,9 @@
 The temdb can also be used for internal operations like rebuilding indexes (when the SORT_IN_TEMPDB is ON), and queries using UNION, DBCC checks, GROUP BY, and ORDER BY. Hash join and Hash aggregate operations.
 
 ### Let’s explore the differences between Tempdb and other databases in SQL Server
-| **Purpose**             | **Tempdb**                                                                                      | **Databases**                                                |
+|              | **Tempdb**                                                                                      | **Databases**                                                |
 |-------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| ****                    | Primarily used for temporary storage during query execution                                     | Serve as persistent storage for data                         |
+|**Purpose**                    | Primarily used for temporary storage during query execution                                     | Serve as persistent storage for data                         |
 | ****                    | Holds temporary objects like global or local temporary tables, table variables, and work tables | Store user-defined tables, views, indexes, and other objects |
 | ****                    | Acts as a scratchpad for sorting, spooling, and other intermediate operations.                  |                                                              |
 | **Lifetime**            | Recreated every time SQL Server restarts.                                                       | Data persists even after server restarts.                    |
